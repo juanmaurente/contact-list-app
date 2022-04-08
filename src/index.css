@@ -1,13 +1,120 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #252525;
+  font-family: 'Exo', sans-serif;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.section {
+  margin: 10px 0px;
 }
+
+.contacts_header {
+  background-color: #5a5a5a0c;
+  height: 43px;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: 600;
+  padding: 20px 0px 20px 0px;
+  
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.search_container{
+  display: flex;
+  justify-content: center;
+  min-width: 25vh;
+  margin: 50px auto;
+  align-content: space-around;
+}
+
+.search_input {
+  
+  font-family: 'Exo';
+  padding-left: 10px;
+  min-height: 30px;
+  border: none;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.search_button {
+  margin-left: 10px;
+  padding: 7px;
+  min-height: 32px;
+  font-family: 'Exo';
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  border-width: 0px;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  background-color: #3898ec;
+}
+
+
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  align-items: center;
+  gap: 18px;
+}
+
+.contact_card{
+  display: flex;
+  max-height: 123px;
+  min-width: 300px;
+  padding: 10px 30px 10px 0px;
+  flex-direction: row;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  background-color: #fff;
+}
+
+.contact_name{
+  max-width: 100px;
+  padding:10px 5px 10px 15px;
+  color: hsla(0, 42%, 36%, 1.00);
+  font-size: 17px;
+  text-align: right;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  
+}
+
+.contact_info{
+  padding: 22px 5px;
+}
+
+.contact_data {
+  color: hsla(239, 21%, 52%, 1.00);
+  margin: 2px;
+  font-size: 13px;
+  text-align: left;
+}
+
+.contact_phone {
+  color:#252525;
+  font-size: 15px;
+  text-align: left;
+}
+
