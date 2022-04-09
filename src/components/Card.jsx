@@ -1,14 +1,14 @@
 import React from 'react'
 
-function Card({ user }) {
+function Card({ contact }) {
   return (
     <div className='contact_card'>
-        <h2 className='contact_name'>{user.name}</h2>
-        <div className='contact_info'>
-            <p className='contact_data'> {user.email}</p>
-            <p className='contact_data'> {user.address.city}</p>
-            <h3 className='contact_phone'>{user.phone}</h3>
+        <div className="contact_data">
+          <h4>{contact.name}</h4>
+          <p>{contact.phone}</p>
+
         </div>
+        
     </div>
   )
 }

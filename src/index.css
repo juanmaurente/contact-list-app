@@ -86,17 +86,14 @@ input:focus {
 
 .grid_container {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
   gap: 18px;
 }
 
 .contact_card{
-  display: flex;
-  max-height: 123px;
-  min-width: 300px;
-  padding: 10px 30px 10px 0px;
-  flex-direction: row;
+  max-height: 100px;
+  min-width: 200px;
+  padding: 10px ;
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
   border-bottom-left-radius: 100px;
@@ -104,33 +101,41 @@ input:focus {
   background-color: #fff;
 }
 
-.contact_name{
-  max-width: 100px;
-  padding:10px 5px 10px 15px;
-  color: hsla(0, 42%, 36%, 1.00);
-  font-size: 17px;
-  text-align: right;
+.contact_data{
+  padding: 10px;
+  color: #252525;
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 100px;
-  
 }
 
-.contact_info{
-  padding: 22px 5px;
-}
-
-.contact_data {
-  color: hsla(239, 21%, 52%, 1.00);
-  margin: 2px;
-  font-size: 13px;
-  text-align: left;
-}
-
-.contact_phone {
-  color:#252525;
+.contact_data h4{
+  margin: 0px;
   font-size: 15px;
-  text-align: left;
+  padding-bottom: 5px;
+  text-align: center;
 }
 
+.contact_data p{
+  margin: 0px;
+  text-align: center;
+}
+
+@media all and (max-width: 1024px) {
+  .grid_container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media all and (max-width: 768px) {
+  .grid_container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media all and (max-width: 500px) {
+  .grid_container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
