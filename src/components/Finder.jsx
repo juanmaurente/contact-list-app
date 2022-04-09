@@ -1,14 +1,10 @@
 import React from 'react'
-import { useState } from 'react'
 
-function Finder() {
-
-  const [text, setText] = useState('')
+function Finder(props) {
 
   const handleChange = (e)=> {
-    setText(e.target.value)
+    props.searchKeyword(e.target.value)
   }
-
 
   return (
     <div className='section'> 
@@ -18,10 +14,10 @@ function Finder() {
                     type="text" 
                     className='search_input'
                     placeholder='Search...'
-                    onChange={handleChange}
-                    value={text}
+                    onChange={ handleChange }
+                    value= {props.text}
                      />
-                <button type="submit" className={`search_button`}>Search</button>
+                <button type="submit" className={`clear_button`}>Clear</button>
             </form>
         </div>
     </div>
